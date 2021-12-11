@@ -34,4 +34,7 @@ brew install zmp
 pip3 install zerorpc
 ```
 
-node 升级到 15.0.0
+zerorpc 安装失败
+
+
+zeromq 验证失败， 应该是可行的就是版本不匹配
