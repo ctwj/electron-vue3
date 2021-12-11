@@ -12,6 +12,7 @@ function createWindow () {
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
+            webSecurity: false
         },
     });
 
@@ -48,3 +49,25 @@ app.on('window-all-closed', () => {
         app.quit();
     }
 });
+
+// python
+let pyProc = null
+let pyPort = null
+
+const createPyProc = () => {
+    let port = '4242'
+    let script = path.join(__dirname, 'py', 'api.py')
+    pyPorc = require('child_process').spawn('python3', [script, port])
+    if (pyPorc != null) {
+        console.log('child process success')
+    }
+}
+
+const exitPyProc = () => {
+    pyProc.kill()
+    pyProc = null
+    pyPort = null
+}
+
+app.on('ready', createPyProc)
+app.on('will-quit', exitPyProc)

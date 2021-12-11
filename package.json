@@ -15,7 +15,8 @@
     "app:build": "yarn build:for:electron && yarn electron:builder"
   },
   "dependencies": {
-    "vue": "^3.2.23"
+    "vue": "^3.2.23",
+    "zeromq": "^5.2.8"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.10.2",

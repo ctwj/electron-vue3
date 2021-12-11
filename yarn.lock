@@ -1869,6 +1869,11 @@ ms@2.1.2:
   resolved "https://registry.npmmirror.com/ms/download/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=
 
+nan@2.14.2:
+  version "2.14.2"
+  resolved "https://registry.nlark.com/nan/download/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
+  integrity sha1-9TdkAGlRaPTMaUrJOT0MlYXu6hk=
+
 nanoid@^3.1.30:
   version "3.1.30"
   resolved "https://registry.npmmirror.com/nanoid/download/nanoid-3.1.30.tgz#63f93cc548d2a113dc5dfbc63bfa09e2b9b64362"
@@ -1878,6 +1883,11 @@ node-addon-api@^1.6.3:
   version "1.7.2"
   resolved "https://registry.nlark.com/node-addon-api/download/node-addon-api-1.7.2.tgz#3df30b95720b53c24e59948b49532b662444f54d"
   integrity sha1-PfMLlXILU8JOWZSLSVMrZiRE9U0=
+
+node-gyp-build@^4.2.3:
+  version "4.3.0"
+  resolved "https://registry.nlark.com/node-gyp-build/download/node-gyp-build-4.3.0.tgz?cache=0&sync_timestamp=1631436711963&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fnode-gyp-build%2Fdownload%2Fnode-gyp-build-4.3.0.tgz#9f256b03e5826150be39c764bf51e993946d71a3"
+  integrity sha1-nyVrA+WCYVC+Ocdkv1Hpk5RtcaM=
 
 normalize-url@^4.1.0:
   version "4.5.1"
@@ -2870,3 +2880,11 @@ yauzl@^2.10.0:
   dependencies:
     buffer-crc32 "~0.2.3"
     fd-slicer "~1.1.0"
+
+zeromq@^5.2.8:
+  version "5.2.8"
+  resolved "https://registry.nlark.com/zeromq/download/zeromq-5.2.8.tgz#94b0b85e4152e98b8bb163f1db4a34280d44d9d0"
+  integrity sha1-lLC4XkFS6YuLsWPx20o0KA1E2dA=
+  dependencies:
+    nan "2.14.2"
+    node-gyp-build "^4.2.3"
